@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	C-Scan perl module
 Summary(pl):	Modu³ perla C-Scan
 Name:		perl-C-Scan
@@ -8,7 +8,9 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/C/C-Scan-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
+BuildRequires:	perl-Data-Flow
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -17,7 +19,7 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 C-Scan - scan C language files for easily recognized constructs.
 
 %description -l pl
-Modu³ perla C-Scan
+Modu³ perla C-Scan.
 
 %prep
 %setup -q -n C-Scan-%{version}
