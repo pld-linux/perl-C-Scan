@@ -20,11 +20,11 @@ Summary(uk):	Модуль для Perl C::Scan
 Summary(zh_CN):	C::Scan Perl дё©И
 Name:		perl-C-Scan
 Version:	0.74
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Data-Flow
 BuildArch:	noarch
@@ -86,7 +86,8 @@ C::Scan Perl дё©И
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -100,5 +101,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_sitelib}/C
+%{perl_vendorlib}/C
 %{_mandir}/man3/*
