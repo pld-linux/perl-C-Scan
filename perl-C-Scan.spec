@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	C
 %define		pnam	Scan
-Summary:	C::Scan perl module
-Summary(pl):	Modu³ perla C::Scan
+Summary:	C::Scan Perl module
+Summary(cs):	Modul C::Scan pro Perl
+Summary(da):	Perlmodul C::Scan
+Summary(de):	C::Scan Perl Modul
+Summary(es):	Módulo de Perl C::Scan
+Summary(fr):	Module Perl C::Scan
+Summary(it):	Modulo di Perl C::Scan
+Summary(ja):	C::Scan Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	C::Scan ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul C::Scan
+Summary(pl):	Modu³ Perla C::Scan
+Summary(pt):	Módulo de Perl C::Scan
+Summary(pt_BR):	Módulo Perl C::Scan
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl C::Scan
+Summary(sv):	C::Scan Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl C::Scan
+Summary(zh_CN):	C::Scan Perl Ä£¿é
 Name:		perl-C-Scan
 Version:	0.74
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,8 +33,54 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 C::Scan - scan C language files for easily recognized constructs.
 
+%description -l cs
+Modul C::Scan pro Perl.
+
+%description -l da
+Perlmodul C::Scan.
+
+%description -l de
+C::Scan Perl Modul.
+
+%description -l es
+Módulo de Perl C::Scan.
+
+%description -l fr
+Module Perl C::Scan.
+
+%description -l it
+Modulo di Perl C::Scan.
+
+%description -l ja
+C::Scan Perl ¥â¥¸¥å¡¼¥ë
+
+%description -l ko
+C::Scan ÆÞ ¸ðÁÙ.
+
+%description -l no
+Perlmodul C::Scan.
+
 %description -l pl
-Modu³ perla C::Scan.
+C::Scan - modu³ poszukuj±cy ³atwo rozpoznawalnych konstrukcji w
+plikach w jêzyku C.
+
+%description -l pt
+Módulo de Perl C::Scan.
+
+%description -l pt_BR
+Módulo Perl C::Scan.
+
+%description -l ru
+íÏÄÕÌØ ÄÌÑ Perl C::Scan.
+
+%description -l sv
+C::Scan Perlmodul.
+
+%description -l uk
+íÏÄÕÌØ ÄÌÑ Perl C::Scan.
+
+%description -l zh_CN
+C::Scan Perl Ä£¿é
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -33,13 +94,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%{perl_sitelib}/C/Scan.pm
+%doc README Changes
+%{perl_sitelib}/C
 %{_mandir}/man3/*
