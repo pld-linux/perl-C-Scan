@@ -10,7 +10,7 @@ Summary(fr):	Module Perl C::Scan
 Summary(it):	Modulo di Perl C::Scan
 Summary(ja):	C::Scan Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	C::Scan ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul C::Scan
+Summary(nb):	Perlmodul C::Scan
 Summary(pl):	Modu³ Perla C::Scan
 Summary(pt):	Módulo de Perl C::Scan
 Summary(pt_BR):	Módulo Perl C::Scan
@@ -58,7 +58,7 @@ C::Scan Perl ¥â¥¸¥å¡¼¥ë
 %description -l ko
 C::Scan ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 Perlmodul C::Scan.
 
 %description -l pl
