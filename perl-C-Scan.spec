@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	C
 %define		pnam	Scan
-Summary:	C-Scan perl module
-Summary(pl):	Modu³ perla C-Scan
+Summary:	C::Scan perl module
+Summary(pl):	Modu³ perla C::Scan
 Name:		perl-C-Scan
 Version:	0.74
 Release:	5
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C-Scan - scan C language files for easily recognized constructs.
+C::Scan - scan C language files for easily recognized constructs.
 
 %description -l pl
-Modu³ perla C-Scan.
+Modu³ perla C::Scan.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
