@@ -1,12 +1,11 @@
-%define	pdir	C
-%define	pnam	Scan
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	C
+%define		pnam	Scan
 Summary:	C-Scan perl module
 Summary(pl):	Modu³ perla C-Scan
 Name:		perl-C-Scan
 Version:	0.74
 Release:	5
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ C-Scan - scan C language files for easily recognized constructs.
 Modu³ perla C-Scan.
 
 %prep
-%setup -q -n C-Scan-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
