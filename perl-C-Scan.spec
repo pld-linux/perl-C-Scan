@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	C
-%define		pnam	Scan
+%define	pdir	C
+%define	pnam	Scan
 Summary:	C::Scan - scan C language files for easily recognized constructs
 Summary(pl):	C::Scan - poszukiwanie ³atwo rozpoznawalnych konstrukcji w plikach w jêzyku C
 Name:		perl-C-Scan
