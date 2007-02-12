@@ -6,7 +6,7 @@
 %define		pdir	C
 %define		pnam	Scan
 Summary:	C::Scan - scan C language files for easily recognized constructs
-Summary(pl):	C::Scan - poszukiwanie ³atwo rozpoznawalnych konstrukcji w plikach w jêzyku C
+Summary(pl.UTF-8):   C::Scan - poszukiwanie Å‚atwo rozpoznawalnych konstrukcji w plikach w jÄ™zyku C
 Name:		perl-C-Scan
 Version:	0.74
 Release:	9
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 C::Scan Perl module scans C language files for easily recognized
 constructs.
 
-%description -l pl
-C::Scan jest modu³em Perla poszukuj±cym ³atwo rozpoznawalnych
-konstrukcji w plikach w jêzyku C.
+%description -l pl.UTF-8
+C::Scan jest moduÅ‚em Perla poszukujÄ…cym Å‚atwo rozpoznawalnych
+konstrukcji w plikach w jÄ™zyku C.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
