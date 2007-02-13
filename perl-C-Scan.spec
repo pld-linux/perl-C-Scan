@@ -6,7 +6,7 @@
 %define		pdir	C
 %define		pnam	Scan
 Summary:	C::Scan - scan C language files for easily recognized constructs
-Summary(pl.UTF-8):   C::Scan - poszukiwanie łatwo rozpoznawalnych konstrukcji w plikach w języku C
+Summary(pl.UTF-8):	C::Scan - poszukiwanie łatwo rozpoznawalnych konstrukcji w plikach w języku C
 Name:		perl-C-Scan
 Version:	0.74
 Release:	9
