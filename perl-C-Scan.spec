@@ -9,7 +9,7 @@ Summary:	C::Scan - scan C language files for easily recognized constructs
 Summary(pl.UTF-8):	C::Scan - poszukiwanie łatwo rozpoznawalnych konstrukcji w plikach w języku C
 Name:		perl-C-Scan
 Version:	0.74
-Release:	9
+Release:	10
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
