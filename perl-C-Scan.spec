@@ -4,7 +4,6 @@
 
 %define		pdir	C
 %define		pnam	Scan
-%include	/usr/lib/rpm/macros.perl
 Summary:	C::Scan - scan C language files for easily recognized constructs
 Summary(pl.UTF-8):	C::Scan - poszukiwanie łatwo rozpoznawalnych konstrukcji w plikach w języku C
 Name:		perl-C-Scan
